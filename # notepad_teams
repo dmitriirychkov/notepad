@@ -46,6 +46,9 @@ sudo sngrep -r
 # -r - захват полезной нагрузки RTP-пакетов.
 
 
+virt-manager - команда запуска Virtual Machine Manager
+
+
 lvcreate -n kvm-deb10bgwsa -L 10G /dev/vg_daedalus --yes - установка debian 10 на вирутальную машину kvm
 # lvcreate - создание логического тома.
 # -n - имя этого тома.
