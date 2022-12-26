@@ -56,3 +56,7 @@ lvcreate -n kvm-deb10bgwsa -L 10G /dev/vg_daedalus --yes - установка de
 # 10G - 10 Гигабайт 
 # /dev/vg_daedalus - путь до vg
 # --yes - что бы не задавал лишних вопросов)
+
+
+vi /etc/apt/sources.list - файл со списком репозиториев Debian
+#vi - от англ. visual, по-русски читается "ви-ай" - серия текстовых редакторов операционной системы семейства UNIX.
