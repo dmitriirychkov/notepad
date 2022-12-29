@@ -71,3 +71,14 @@ cat /etc/resolv.conf -просмотр информации, которая по
 lvs - отображения сведений о логических томах. 
 
 lvremove /dev/vg_daedalus/kvm-bgwbg-astra-3 - удаление тома kvm-bgwbg-astra-3.
+
+
+sudo nano /etc/network/interfaces - Открываем файл /etc/network/interfaces
+# This file describes the network  interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
