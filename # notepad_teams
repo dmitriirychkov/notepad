@@ -4,6 +4,8 @@
 ip route add xxx.xxx.xxx.xxx (куда) via xxx.xxx.xxx.xxx (через шлюз) dev *name (с какого девайса)
 ip route add 192.168.124.236 via 192.168.104.254 dev bond0.43
 
+sudo ip address add 192.168.143.51/24 dev eth0
+
 
 ping3:
 hping3 192.168.103.103		--udp			--destport 5060		--interface eth0.770	--baseport 9080		--keep				--data 300		--fast
@@ -64,3 +66,8 @@ vi /etc/apt/sources.list - файл со списком репозиториев
 
 cat /etc/resolv.conf -просмотр информации, которая позволяет компьютеру преобразовать буквенно-цифровые доменные имена в цифровые IP адреса. 
 # cat - читает данные из файла или стандартного ввода и выводит их на экран.
+
+
+lvs - отображения сведений о логических томах. 
+
+lvremove /dev/vg_daedalus/kvm-bgwbg-astra-3 - удаление тома kvm-bgwbg-astra-3.
