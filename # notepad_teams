@@ -97,5 +97,7 @@ dd if=/dev/vg_daedalus/kvm-alsebgwsa of=/dev/vg_daedalus/kvm-alsebgwsa-copy bs=1
 
 
 scp bgwng_0-master-181_ALSE_1_7_amd64.deb sysadmin@192.168.66.54:/home/sysadmin  
-# scp - утилита и протокол копирования файлов между компьютерами, использующий шифрованный SSH. 
+# scp - утилита и протокол копирования файлов между компьютерами, использующий шифрованный SSH.
+# bgwng_0-master-181_ALSE_1_7_amd64.deb - source_file_name - что мы копируем.
+# sysadmin@192.168.66.54:/home/sysadmin - куда копируем. sysadmin - имя пользователя. 192.168.66.54 - адрес (или host). /home/sysadmin - директория, куда произведётся копирование. 
 
