@@ -104,3 +104,10 @@ scp bgwng_0-master-181_ALSE_1_7_amd64.deb sysadmin@192.168.66.54:/home/sysadmin
 
 # Скрипт сортирует содержимое папки по размеру
 du -a -d 1 -h | sort -h 
+
+
+# Выводит команды bash, которые используются чаще всего
+history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+
+# Удаляет все пустые папки
+find . -type d -empty -delete
