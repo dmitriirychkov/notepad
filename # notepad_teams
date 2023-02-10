@@ -101,3 +101,6 @@ scp bgwng_0-master-181_ALSE_1_7_amd64.deb sysadmin@192.168.66.54:/home/sysadmin
 # bgwng_0-master-181_ALSE_1_7_amd64.deb - source_file_name - что мы копируем.
 # sysadmin@192.168.66.54:/home/sysadmin - куда копируем. sysadmin - имя пользователя. 192.168.66.54 - адрес (или host). /home/sysadmin - путь назначения, куда произведётся копирование. 
 
+
+# Скрипт сортирует содержимое папки по размеру
+du -a -d 1 -h | sort -h 
