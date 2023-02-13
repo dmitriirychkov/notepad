@@ -111,3 +111,7 @@ history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 
 # Удаляет все пустые папки
 find . -type d -empty -delete
+
+# Команда копирования и вывода всех текущих файлов на директорию выше в папку test.cpio
+ls | cpio -o > ../test.cpio
+
